@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var dday = new Date("october 17, 2022, 0:00:00").getTime();
+
+  setInterval(function() {
+    var today = new Date().getTime();
+    var gap = dday - today;
+    var day = Math.ceil(gap / (1000 * 60 * 60 * 24));
+    var hour = Math.ceil((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
+    var sec = Math.ceil((gap % (1000 * 60)) / 1000);
+
+    document.getElementById("count").innerHTML = "D-DAY까지 " +
+     day + "일 " + hour + "시간 " + min + "분 " + sec + "초 남았습니다.";
+  }, 1000);
+  </script>
+</head>
+<body>
+  <div id="count">
+
+  </div>
+</body>
+</html>

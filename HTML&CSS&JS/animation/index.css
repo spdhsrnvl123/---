@@ -1,0 +1,273 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin-top: 100px;
+}
+.top , .bottom{
+  /* margin:10px; */
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Single Day', cursive;
+}
+.top{
+  margin-bottom: 20px;
+  animation-name: top;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes top{
+  from{
+    color:white;
+    transform:scale(1);
+  }
+  to{
+    color: greenyellow;
+    transform:scale(1.5);
+  }
+}
+.container{
+  width:400px;
+  height:265px;
+  background: linear-gradient(45deg,rgba(0,244,0,0.3),rgb(255, 255, 255));
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.box_1{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_001.jpeg");
+  border-top-left-radius:10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1s;
+  /* animation-iteration-count: 10; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_2{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_002.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.2s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_3{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_003.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.4s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_4{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_004.jpeg");
+  border-top-right-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.6s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_5{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_005.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.2s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_6{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_006.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.4s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_7{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_007.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.6s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_8{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_008.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.8s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_9{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_009.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.4s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_10{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_010.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.6s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_11{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_011.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.8s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_12{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_012.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:2s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_13{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_013.jpeg");
+  border-bottom-left-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.6s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_14{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_014.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:1.8s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_15{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_015.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:2s;
+  /* animation-iteration-count: infinite;*/
+  animation-delay: 1s; 
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box_16{
+  float: left;
+  width:100px;
+  height: 66px;
+  background-image: url("images/dog_016.jpeg");
+  border-bottom-right-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: first;
+  animation-duration:2.2s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes first {
+  form{
+    transform:perspective(100px) rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    
+    transform:perspective(100px) rotateX(0deg) rotateY(360deg);
+  }
+}

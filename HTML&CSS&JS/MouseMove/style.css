@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #111;
+  overflow: hidden;
+}
+h1 {
+  font-family: fantasy;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+span {
+  position: absolute;
+  /* absolute 알아보기. */
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+  /* pointer-events CSS속성은 그래픽 요소가 어떤 상황에서
+   포인터 이벤트의 대상이 될 수 있는지 지정한다. */
+  animation: fadeInOut 1s linear infinite;
+}
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  /* absolute 알아보기. */
+  /* width: 100px; */
+  /* height: 100px; */
+  width: 100%;
+  height: 100%;
+  background: url(images/heart.png);
+  background-size: cover;
+  animation: moveShape 1s linear infinite;
+}
+@keyframes moveShape {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+  100% {
+    transform: translate(300px) rotate(360deg);
+  }
+}
