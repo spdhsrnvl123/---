@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 3d</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+        /* 이미지도 같이 줄여짐 */
+        height: auto;
+      }
+
+      .world {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        perspective: 500px;
+      }
+
+      @keyframes poster-ani {
+        0% {
+          transform: rotateY(-20deg);
+        }
+        100% {
+          transform: rotateY(20deg);
+        }
+      }
+
+      .poster {
+        position: relative;
+        width: 200px;
+        border: 2px solid black;
+        height: 250px;
+        border-radius: 10px;
+        background-color: yellow;
+        animation: poster-ani 1.6s infinite linear alternate;
+        transform-style: preserve-3d;
+      }
+
+      .poster-title {
+        padding: 0.5em 0;
+        font-size: 2rem;
+        font-weight: normal;
+        text-align: center;
+        transform: translateZ(30px);
+      }
+
+      .ilbuni {
+        position: absolute;
+        width: 40%;
+      }
+      .ilbuni:nth-of-type(1) {
+        width: 25%;
+        left: 42%;
+        bottom: 40%;
+        transform: translateZ(200px);
+      }
+      .ilbuni:nth-of-type(2) {
+        /* width: 45%; */
+        right: 10%;
+        bottom: 10%;
+        transform: translateZ(40px);
+      }
+      .ilbuni:nth-of-type(3) {
+        width: 35%;
+        left: 10%;
+        bottom: 5%;
+        transform: translateZ(50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="world">
+      <section class="poster">
+        <h1 class="poster-title">이에요</h1>
+        <figure class="ilbuni">
+          <img src="images/1buni1.png" />
+        </figure>
+        <figure class="ilbuni">
+          <img src="images/1buni2.png" />
+        </figure>
+        <figure class="ilbuni">
+          <img src="images/1buni3.png" />
+        </figure>
+      </section>
+    </div>
+  </body>
+</html>
