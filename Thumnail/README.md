@@ -17,7 +17,6 @@ function updateValue(e) {
 ```
 [input 이벤트 mdn 문서](https://developer.mozilla.org/ko/docs/Web/API/HTMLElement/input_event)
 
-
 ### 🚀 HTML
 ```html
       <div id="capture" class="preview">
@@ -57,3 +56,9 @@ inputFields.forEach((value)=>{
 5) updateInputValue 함수에는 e.target.value인 이벤트 속성을 사용하여 설정해준 DOM객체에 value 값을 넣어준다.
 
 ❗️Dataset 관련해서는 블로그 참고
+
+## ✨랜덤 그라디언트, 단색 배경 만들기
+
+> 구현 방법
+1) Point는 rgb에서 hex 코드를 변환하는 함수 구현
+2) 구한 rgb에 값에 따라서 단색과 그라디언트 함수를 만들어 전달
